@@ -6,35 +6,37 @@
 - Clone the repository to your local machine
   `git clone https://github.com/Moiz081/ReachInbox.git`
   
-- Run `npm install` to install all the dependencies
-
+- Run `npm install` to install all the dependencies.
+- Run `npm run build` to compile Typescript into Javascript.
+- Run `npm start` to boot the server.
+- Run `npm run scheduler` to execute the scheduler-service.ts
 - Create a `.env` file in the root directory with the same IDs as specified in the documentation.
 
 ### Running the server
 - To start the server, run the following command in your terminal
   `npm start`
   
-- To start the worker.js file, run the following command in your terminal
-  `npm run server`
+- To start the scheduler-service.ts file, run the following command in your terminal
+  `npm run scheduler`
 ### File Structure
 ```
 src/
 ├── config/
-│   ├── db.js
-│   └── serverConfig.js
+│   ├── db.ts
+│   └── serverConfig.ts
 ├── controller/
-│   ├── gmail-controller.js
-│   ├── googleAuth-controller.js
-│   ├── outlook-controller.js
-│   └── microsoftAuth-controller.js
+│   ├── gmail-controller.ts
+│   ├── googleAuth-controller.ts
+│   ├── outlook-controller.ts
+│   └── microsoftAuth-controller.ts
 ├── routes/
 │   ├── v1/
-│   │   └── index.js
-│   └── index.js
+│   │   └── index.ts
+│   └── index.ts
 ├── services/
-│   ├── message-service.js
-│   ├── openai-service.js
-│   └── scheduler-service.js
+│   ├── message-service.ts
+│   ├── openai-service.ts
+│   └── scheduler-service.ts
 └── index.ts
 ```
 
@@ -60,6 +62,6 @@ http://localhost:{PORT}/api/v1/{API_ENDPOINT}
 ```
 
 ### Video Walkthrough
-```
-https://drive.google.com/file/d/1DTYZOzBpyo5tPWBoQ-8zBFvozV_I6ryS/view?usp=drivesdk
-```
+
+https://drive.google.com/file/d/1EcNE2nbSzoJLHRQpLveKm4BAza6gsRnm/view?usp=drivesdk
+
